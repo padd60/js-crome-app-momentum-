@@ -1,5 +1,6 @@
 const calculator = {
   add: function (a, b) {
+    console.log("hello");
     return a + b;
   },
   minus: function (a, b) {
@@ -17,7 +18,3 @@ const calculator = {
 };
 
 const addresult = calculator.add(2, 3);
-const minusresult = calculator.minus(addresult, 10);
-const multiplyresult = calculator.multiply(10, minusresult);
-const divideresult = calculator.divide(multiplyresult, addresult);
-const squaredresult = calculator.squared(divideresult, minusresult);
