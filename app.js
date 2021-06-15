@@ -1,7 +1,7 @@
-function sayHello() {
-  console.log("Hello my name is C");
+function sayHello(nameOfPerson, age) {
+  console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
 }
 
-sayHello("junghwan");
-sayHello("kim");
-sayHello("john");
+sayHello("junghwan", 27);
+sayHello("kim", 25);
+sayHello("john", 30);
