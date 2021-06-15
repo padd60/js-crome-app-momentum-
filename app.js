@@ -1,18 +1,23 @@
-const age = 96;
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  multiply: function (a, b) {
+    return a * b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  squared: function (a, b) {
+    return a ** b;
+  },
+};
 
-function calculateKrAge(ageOfForeigner) {
-  return ageOfForeigner + 2;
-}
-
-const KrAge = calculateKrAge(age);
-
-console.log(KrAge);
-
-function calculateKrAge2(ageOfForeigner) {
-  ageOfForeigner + 2;
-  return "hello";
-}
-
-const KrAge2 = calculateKrAge2(age);
-
-console.log(KrAge2);
+const addresult = calculator.add(2, 3);
+const minusresult = calculator.minus(addresult, 10);
+const multiplyresult = calculator.multiply(10, minusresult);
+const divideresult = calculator.divide(multiplyresult, addresult);
+const squaredresult = calculator.squared(divideresult, minusresult);
