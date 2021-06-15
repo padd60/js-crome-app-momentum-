@@ -1,11 +1,7 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+function sayHello() {
+  console.log("Hello my name is C");
+}
 
-//Get Item from Array
-console.log(daysOfWeek[4]);
-
-console.log(daysOfWeek);
-
-// Add one more day to the array
-daysOfWeek.push("sun");
-
-console.log(daysOfWeek);
+sayHello("junghwan");
+sayHello("kim");
+sayHello("john");
