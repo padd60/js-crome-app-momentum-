@@ -1,23 +1,18 @@
-const calculator = {
-  add: function (a, b) {
-    console.log(a + b);
-  },
-  minus: function (a, b) {
-    console.log(a - b);
-  },
-  multiply: function (a, b) {
-    console.log(a * b);
-  },
-  divide: function (a, b) {
-    console.log(a / b);
-  },
-  squared: function (a, b) {
-    console.log(a ** b);
-  },
-};
+const age = 96;
 
-calculator.add(1, 1);
-calculator.minus(1, 1);
-calculator.multiply(1, 1);
-calculator.divide(1, 1);
-calculator.squared(1, 1);
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
+}
+
+const KrAge = calculateKrAge(age);
+
+console.log(KrAge);
+
+function calculateKrAge2(ageOfForeigner) {
+  ageOfForeigner + 2;
+  return "hello";
+}
+
+const KrAge2 = calculateKrAge2(age);
+
+console.log(KrAge2);
