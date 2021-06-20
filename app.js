@@ -1,14 +1,10 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.querySelector(".login-form");
+const loginInput = document.querySelector(".login-form input");
 
-function handleTitleClick() {
-  h1.classList.toggle("active");
+function onLoginSubmit(tomato) {
+  tomato.preventDefault();
+  const username = loginInput.value;
+  console.log(username);
 }
 
-h1.addEventListener("click", handleTitleClick);
-
-// const clickedClass = "active";
-// if (h1.classList.contains(clickedClass)) {
-//   h1.classList.remove(clickedClass);
-// } else {
-//   h1.classList.add(clickedClass);
-// }
+loginForm.addEventListener("submit", onLoginSubmit);
