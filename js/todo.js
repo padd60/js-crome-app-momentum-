@@ -18,16 +18,21 @@ function deleteToDo(event) {
 }
 
 function paintToDo(newTodo) {
-  const li = document.createElement("li");
-  li.id = newTodo.id;
-  const span = document.createElement("span");
-  const button = document.createElement("button");
-  button.innerText = "❌";
-  button.addEventListener("click", deleteToDo);
-  li.appendChild(span);
-  li.appendChild(button);
-  span.innerText = newTodo.text;
-  toDoList.appendChild(li);
+  if (toDos.length > 5) {
+    toDos.pop();
+    alert("Please Delete other list");
+  } else {
+    const li = document.createElement("li");
+    li.id = newTodo.id;
+    const span = document.createElement("span");
+    const button = document.createElement("button");
+    button.innerText = "X";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    span.innerText = newTodo.text;
+    toDoList.appendChild(li);
+  }
 }
 
 function handleToDoSumit(event) {

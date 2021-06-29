@@ -1,3 +1,98 @@
 .hidden {
   display: none;
 }
+
+body {
+  padding-top: 70px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bgImage {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  filter: brightness(50%);
+}
+
+#login-form {
+  text-align: center;
+}
+
+#greeting {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#clock {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+
+#todo-list {
+  text-align: center;
+  color: whitesmoke;
+}
+
+#todo-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#todo-form input {
+  width: 500px;
+  height: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#todo-list {
+  text-align: center;
+}
+
+#todo-list li {
+  list-style: none;
+  font-size: 1rem;
+  color: whitesmoke;
+  height: 30px;
+  width: 500px;
+  margin: auto;
+}
+
+#todo-list button {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.123);
+  outline: none;
+  border: none;
+  color: whitesmoke;
+}
+
+#quote {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#line {
+  text-align: center;
+  border-color: snow;
+  border-bottom-style: solid;
+  width: 500px;
+  margin: auto;
+}
+
+#weather {
+  margin-top: 10px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
